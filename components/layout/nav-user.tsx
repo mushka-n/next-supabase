@@ -1,23 +1,12 @@
 'use client';
 
-import { ROUTES } from '@/constants/routes';
 import { signOutAction } from '@/server/api/auth/sign-out';
-import {
-  BadgeCheck,
-  Bell,
-  ChevronsUpDown,
-  CreditCard,
-  LogOut,
-  RotateCw,
-  Sparkles,
-} from 'lucide-react';
-import Link from 'next/link';
+import { ChevronsUpDown, LogOut } from 'lucide-react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
@@ -79,15 +68,6 @@ export function NavUser({
                 </div>
               </div>
             </DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <DropdownMenuItem asChild>
-                <Link href={ROUTES.RESET_PASSWORD}>
-                  <RotateCw />
-                  Reset Password
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={signOutAction}>
               <LogOut />
