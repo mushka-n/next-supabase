@@ -32,6 +32,12 @@
 
     The starter kit should now be running on [localhost:3000](http://localhost:3000/).
 
+5.  Setup OAuth _(optional)_
+
+    By default **"Sign in with Google"** is listed as an option on auth pages. This feature can rither be removed or implemented using [this guide](https://supabase.com/docs/guides/auth/social-login/auth-google?queryGroups=environment&environment=server)
+
+    [OAuth setup guides for other providers](https://supabase.com/docs/guides/auth/social-login#set-up-a-social-provider-with-supabase-auth)
+
 ## Deploy
 
 [Deploy with Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmushka-n%2Fnext-supabase-template&project-name=next-supabase-template&repository-name=next-supabase-template)
