@@ -34,7 +34,7 @@
 
 ## Deploy
 
-[Deploy with Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmushka-n%2Fnext-supabase&project-name=next-supabase-template&repository-name=next-supabase-template)
+[Deploy with Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmushka-n%2Fnext-supabase-template&project-name=next-supabase-template&repository-name=next-supabase-template)
 
 #
 
