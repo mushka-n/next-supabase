@@ -3,11 +3,8 @@
 import { ROUTES } from '@/constants/routes';
 import { cn } from '@/utils/cn';
 import { UserResponse } from '@supabase/supabase-js';
-import {
-  GalleryVerticalEnd,
-  HomeIcon,
-  LayoutDashboardIcon,
-} from 'lucide-react';
+import { HomeIcon, LayoutDashboardIcon } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import * as React from 'react';
@@ -53,8 +50,14 @@ export function AppSidebar({
       <SidebarHeader>
         <SidebarMenuButton size='lg' asChild>
           <Link href={ROUTES.HOME} className='flex items-center gap-3'>
-            <div className='flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground min-h-8 min-w-8 [[data-state=collapsed]_&]:-ml-2 transition-[margin]'>
-              <GalleryVerticalEnd className='size-4' />
+            <div className='flex aspect-square size-8 items-center justify-center min-h-8 min-w-8 [[data-state=collapsed]_&]:-ml-2 transition-[margin]'>
+              <Image
+                src={'/icons/logo.svg'}
+                alt='Logo'
+                width={32}
+                height={32}
+                priority
+              />
             </div>
             <span className='text-[16px] font-semibold'>Acme. Inc</span>
           </Link>

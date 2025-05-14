@@ -1,6 +1,4 @@
-import { GalleryVerticalEnd } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { ThemeSelector } from '@/components/layout/theme-selector';
 
@@ -12,9 +10,15 @@ export default async function AuthLayout({
   return (
     <div className='grid min-h-svh lg:grid-cols-2'>
       <div className='flex flex-col gap-4 p-6 md:p-10'>
-        <div className='flex justify-center gap-2 md:justify-start font-medium'>
-          <div className='bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md'>
-            <GalleryVerticalEnd className='size-4' />
+        <div className='flex justify-center gap-3 md:justify-start font-medium'>
+          <div className='flex size-6 items-center justify-center '>
+            <Image
+              src={'/icons/logo.svg'}
+              alt='Logo'
+              width={24}
+              height={24}
+              priority
+            />
           </div>
           Acme Inc.
         </div>
